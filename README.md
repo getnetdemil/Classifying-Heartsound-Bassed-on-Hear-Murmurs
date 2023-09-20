@@ -1,8 +1,8 @@
-﻿Biomedical Signal Processing Project
+**﻿Biomedical Signal Processing Project**
 
-Classifying murmurs
+**Classifying murmurs**
 
-Krist´of Muller,¨ Janka Hatvani
+Sorce of the data and the project: Krist´of Muller,¨ Janka Hatvani
 
 Autumn 2022
 
@@ -10,7 +10,7 @@ Autumn 2022
 
 In this project you will (hopefully) create a method to classify heartsounds based on if they contain heart murmurs or not. This task was actually given out as an international challenge for researchers, the newly named George B. Moody PhysioNet Challenge [1]. You will work with the same data, but we made your task easier by pre-selecting some of the data. You can use the original complete dataset [2], if you would like, but that is in another format and there are some other differences. All in all it is a bit more complicated to use that, especially based on the varying signal quality.
 
-1
+
 
 1\.1 Heart murmurs
 
@@ -42,42 +42,6 @@ After downloading the dataset, read in the data. It contains two folders for nor
 4. Classify each record as Normal or Murmur. You do not need to differentiate between the murmur types. (PCA, ICA, SVM etc.)
 4. Create the documentation and a presentation (∼5 min + questions) for your submission.
 
-Your submission should be in a form of a MATLAB function, which takes the signal in question as input and outputs the final classification as Normal or Abnormal (see the provided template). Please also provide documentation for your submission and some example results as well as the validation accuracy. If your main function calls other functions you made, please also include them in your submission. Your documentation should contain reasons for why you chose given properties for the classification, also it should contain the following table (Table 1) for a schedule and task distribution. Please give us a plan for your work at the start with the same table style. (These two tables do not need to match exactly)
-
-
-
-|Member|||||||
-| - | :- | :- | :- | :- | :- | :- |
-|Name01|||||||
-|Name02|||||||
-|(Name03)|||||||
-
-|Week 1 (Nov4-Nov10)|Week 2 (Nov11-Nov17)|Week 3 (Nov18-Nov24)|Week 4 (Nov25-Dec1)|Week 5 (Dec2-Dec8)|(Week 6) (Dec9-Dec15)|
-| - | - | - | - | - | - |
-|||||||
-|||||||
-|||||||
-Table 1: Schedule and tasks
-
-2. Provided materials
-- PCG recording data (sample rate: 4 kHz)
-- Heartsound location files
-- Measured heartrate (bpm)
-- MATLAB function template
-- MATLAB runner and evaluator script
-
-Obviously murmur information, heartrate, and the heartsound locations will not be available during testing.
-
-3  Evaluation
-
-Your work will be evaluated based on accuracy, code quality, documentation quality, and your presenta- tion. Since this is a difficult task, we will measure multiple accuracies. Bonus points can be awarded for outstanding accuracy, a well researched method or for extra non-compulsory tasks (e.g. differentiating between systolic and diastolic murmurs). Points will be taken away if the code gives an error during testing, or it is heavily based on other teams’ work, and if you use a ready solution without giving a proper reference to it and understanding how it works. We will ask questions about your implementation during your presentation. The accuracies for the results will be calculated as follows:
-
-- Heartsound location: is it between the beginning and the end labels? - Hits/Misses
-- Heartrate: what is the error percentage? - ≤ 5% error
-- Systole/diastole: what is the overlap percentage to the real one? - ≤ 10% overlap error
-- Classification (Normal/Murmur): sensitivity and specificity
-
-2
 
 The sensitivity and specificity will be calcu- lated as their standard definitions, or to be more exact in the following way:
 
@@ -85,7 +49,7 @@ TP TN Se =~~ , Sp =
 
 TP + FN TN + FP Where each term is defined as in Table 2.
 
- 
+
 
 ||Murmur|Normal|
 | :- | - | - |
@@ -94,7 +58,7 @@ TP + FN TN + FP Where each term is defined as in Table 2.
 
 Table 2: Classification terms
 
-3
+
 
 References
 
